@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Testter</title>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+  <header>
+    <ul class="main-navi">
+      <li class="navi-list-left navi-list-home"><%= link_to "ホーム", root_path, class:"glyphicon glyphicon-home" %></li>
+      <li class="navi-list-left navi-list-msg"><%= link_to "メッセージ", new_contact_path, class:"glyphicon glyphicon-envelope" %></li>
+      <li class="navi-list-left navi-list-main"><%= link_to "ツイート一覧", tweets_path, class:"glyphicon glyphicon-comment" %></li>
+      <li class="navi-list-right navi-list-tweet"><%= link_to "ツイート", new_tweet_path%></li>
+    </ul>
+  </header>
+
+<%= yield %>
+
+  <footer>
+    <p>運営会社DIVE INTO CODE株式会社</p>
+    <p>© 2015-2016 Copyright DIVE INTO CODE Corp.</p>
+  </footer>
+
+</body>
+</html>
