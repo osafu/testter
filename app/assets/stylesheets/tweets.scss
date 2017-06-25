@@ -163,6 +163,9 @@ h2{
     &:last-child{
        border-bottom: none;
     }
+    .tweets-list-content{
+        word-wrap: break-word;
+    }
 }
 
 .tweet-btn-box{
