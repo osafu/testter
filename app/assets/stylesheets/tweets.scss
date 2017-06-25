@@ -171,10 +171,9 @@ h2{
 .tweet-btn-box{
     width: 120px;
     margin: 20px auto 0;
-}
-
-.tweet-btn{
-    @include tweet-btn;
+    .tweet-btn{
+        @include tweet-btn;
+    }
 }
 
 @media (max-width: 480px) { 
